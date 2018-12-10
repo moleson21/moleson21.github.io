@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-tags: [test, winter]
+tags: [template, tags]
 ---
 
 # Welcome

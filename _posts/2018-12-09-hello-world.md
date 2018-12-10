@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Welcome to Jekyll!
-tags: [test, winter, test space]
+title:  Hello World!
+description: My First Post!
+tags: [test, first, hello world]
 main_image: https://assets-cdn.github.com/images/icons/emoji/octocat.png
 ---
 

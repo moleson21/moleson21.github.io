@@ -7,9 +7,24 @@ Hello! My name is Mitchell and I am a UC Berkeley graduate who majored in Mechan
 Outside of school & work, I enjoy camping and have achieved the Eagle Scout rank in the [Boy Scouts of America](https://www.scouting.org/). Most recently, I traveled for three weeks up the US-101 along the California and Oregon coast then back down through Crater Lake and Lassen National Parks.
 
 # Recent Posts
-{% for post in site.posts limit:3 %}
-  [![{{ post.title }}]({{ post.main_image }})]({{ post.url }})
+<div style="width:100%; padding-bottom:1.0em;" markdown="1">
+{% for post in site.posts limit:5 %}
+{% if forloop.index == 1 %}
+<div style="font-size:80%; text-align:center; float:left;" markdown="1">
+{% else %}
+<div style="font-size:80%; padding-left:1.0em;; text-align:center; float:left;" markdown="1">
+{% endif %}
+<a href="{{ post.url }}" markdown="1">
+<img src="{{ post.main_image }}" width="width" height="height" style="padding-bottom:0.5em;" markdown="1"/>
+<br />
+{{ post.title }}
+</a>
+</div>
 {% endfor %}
+<br />
+</div>
+<br />
+<br />
 
 # Professional Experience
 See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for more detailed and up to date information. In short, I have previously worked for:
@@ -67,3 +82,4 @@ See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for mo
 # Contact Info
 moleson21 [at] gmail [dot] com <br />
 [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) | [Github](https://moleson21.github.com)
+
