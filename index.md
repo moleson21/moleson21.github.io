@@ -1,17 +1,32 @@
+---
+id: 'main_index'
+title: Mitchell Oleson
+description: Welcome to my website!
+logo: assets/logo.jpg
+show_downloads: false
+---
 # About Me
 Hello! My name is Mitchell and I am a UC Berkeley graduate who majored in Mechanical Engineer and Electrical Engineering & Computer Science. I am extremely passionate about hardware systems and the software that supports them. Throughout my professional work and in the clubs/classes at Berkeley, I have utilized my multi-disciplinary skillset to develop advanced solutions to challenging problems. I enjoy tinkering with hardware to create efficient and cost effective solutions in addition to writing my own embedded software to further optimize space and speed constraints.
 
-Outside of school & work, I thoroughly enjoy camping and have achieved the Eagle Scout rank in the [Boy Scouts of America](https://www.scouting.org/). Most recently, I traveled for three weeks up the US-101 along the California and Oregon coast then back down through Crater Lake and Lassen National Parks.
+Outside of school & work, I enjoy camping and have achieved the Eagle Scout rank in the [Boy Scouts of America](https://www.scouting.org/). Most recently, I traveled for three weeks up the US-101 along the California and Oregon coast then back down through Crater Lake and Lassen National Parks.
+
+# Recent Posts
+{% for post in site.posts limit:3 %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    {{ post.excerpt }}
+  </li>
+{% endfor %}
 
 
-# Professional experience
+# Professional Experience
 See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for more detailed and up to date information. In short, I have previously worked for:
 
 - SpaceX: <br />
   Spent two summers (one as a Launch Intern and another as an Associate Engineer) at the SpaceX Vandenberg launch site. During both of these experiences, I was involved wtih ground side command & control deployment, camera installation/configuration/control, system management, sensor troubleshooting, and camera control software creation.
 
 - Intel: <br />
-  Spent a summer as a technical intern benchmarking their new Optane Memory solutions using SYSMark 2014, PCMark Vantage/8, 3DMark, and IOMeter across numerous system configurations. Additionally, I authored a whitepaper that put forth compelling reasons why current benchmarking needs to be adjusted by analyzing datasets generated across numerous computers and user workloads.
+  Spent a summer as a technical intern benchmarking new Optane Memory solutions using SYSMark 2014, PCMark Vantage/8, 3DMark, and IOMeter across numerous system configurations. Additionally, I authored a whitepaper that put forth compelling reasons why current benchmarking needs to be adjusted by analyzing datasets generated across numerous computers and user workloads.
 
 
 # Projects
@@ -20,7 +35,7 @@ See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for mo
   This is a side project that has slowly grown in scope and capabilities. It started out as a simple IO GUI for controlling an arduino via serial to rapidily bring up the Berkeley Hyperloop teams hardware testing systems with little to no software & hardware modifications. For this use case, we had a varying number solenoids to control as well as some analog temperature sensors to monitor. Since then, I have added the ability to dynamically set various aspects of the program via a config file, added support for TCP & UDP connections, added checksums for verification, and modified the transmission protocol for minimal tranmission lengths and dynamic length adjustments.
 
 - [Cal AIAA](https://aiaa.berkeley.edu/) <br />
-  This was the primary team I was involved with through college. Started out as Software & Computer Systems lead for the rover team Sophmore year before continuing on to President of Cal AIAA and Project Manager for the rover team. Through my time we spent a great deal of effort building from scratch a modular software system that utilizes a front end control client, middle manager server (to collate and enforce rover commands), and back end rover client that carried out/responded to requests from the server. Furthermore, I also worked closely with the mechanical engineers helping them design their systems with controlability in mind. This included placements of motors, encoders, servos, cameras, strain guages, and power distribution busses. We also attempted to design our own motor controller using [KiCAD](http://kicad-pcb.org/) and [LTSpice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html), however, despite succesfully desgining, milling, assembling, and intial testing of a dual motor controller, it was found to be unfeasable as the required current wat too high for the copper thickness and available cooling. The github group for this team can be found [here](https://github.com/cal-roboops).
+  This was the primary team I was involved with starting Sophmore year as Software & Computer Systems Lead for the Rover Team. I later went on to become the President of Cal AIAA and Project Manager for the Rover Team. Through my time we spent a great deal of effort building from scratch a modular software system that utilizes a front end control client, middle manager server (to collate and enforce rover commands), and back end rover client that carried out/responded to requests from the server. Furthermore, I also worked closely with the mechanical engineers helping them design their systems with controlability in mind. This included placements of motors, encoders, servos, cameras, strain guages, and power distribution busses. We also attempted to design our own motor controller using [KiCAD](http://kicad-pcb.org/) and [LTSpice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html), however, despite succesfully desgining, milling, assembling, and intial testing of a dual motor controller, it was found to be unfeasable as the required current wat too high for the copper thickness and available cooling. The github group for this team can be found [here](https://github.com/cal-roboops).
 
 - [Berkeley Hyperloop](https://berkeleyhyperloop.com/) <br />
   The github group for this team can be found [here](https://github.com/Berkeley-Hyperloop).
