@@ -1,8 +1,5 @@
 ---
 id: main_index
-title: Mitchell Oleson
-description: Welcome to my website!
-show_downloads: false
 ---
 # About Me
 Hello! My name is Mitchell and I am a UC Berkeley graduate who majored in Mechanical Engineer and Electrical Engineering & Computer Science. I am extremely passionate about hardware systems and the software that supports them. Throughout my professional work and in the clubs/classes at Berkeley, I have utilized my multi-disciplinary skillset to develop advanced solutions to challenging problems. I enjoy tinkering with hardware to create efficient and cost effective solutions in addition to writing my own embedded software to further optimize space and speed constraints.
@@ -13,8 +10,6 @@ Outside of school & work, I enjoy camping and have achieved the Eagle Scout rank
 {% for post in site.posts limit:3 %}
   [![{{ post.title }}]({{ post.main_image }})]({{ post.url }})
 {% endfor %}
-<br />
-<br />
 
 # Professional Experience
 See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for more detailed and up to date information. In short, I have previously worked for:
