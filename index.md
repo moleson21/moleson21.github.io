@@ -1,8 +1,7 @@
 ---
-id: 'main_index'
+id: main_index
 title: Mitchell Oleson
 description: Welcome to my website!
-logo: assets/logo.jpg
 show_downloads: false
 ---
 # About Me
@@ -14,7 +13,6 @@ Outside of school & work, I enjoy camping and have achieved the Eagle Scout rank
 {% for post in site.posts limit:3 %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt }}
   </li>
 {% endfor %}
 
