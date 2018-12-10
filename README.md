@@ -1,4 +1,3 @@
-# Site Under Construction
+# Personal Site
 
-This site is still under development. If you need to reach me, please email me at moleson21 [at] gmail [dot] com.
--Mitchell
+This repo contains my personal github site. For questions or comments, please contact me at moleson21 [at] gmail [dot] com. [Click here](https://moleson.github.io) to visit the site.
