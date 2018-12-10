@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-tags: [test, winter]
+title:  Welcome to Jekyll!
+tags: [test, winter, test space]
+main_image: https://assets-cdn.github.com/images/icons/emoji/octocat.png
 ---
 
 # Welcome

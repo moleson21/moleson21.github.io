@@ -11,11 +11,10 @@ Outside of school & work, I enjoy camping and have achieved the Eagle Scout rank
 
 # Recent Posts
 {% for post in site.posts limit:3 %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+  [![{{ post.title }}]({{ post.main_image }})]({{ post.url }})
 {% endfor %}
-
+<br />
+<br />
 
 # Professional Experience
 See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for more detailed and up to date information. In short, I have previously worked for:
