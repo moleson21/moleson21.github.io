@@ -6,8 +6,9 @@ description: Welcome to my website!
 title: Mitchell Oleson
 author: Mitchell Oleson
 
-paginate: 25
+paginate: 15
 paginate_path: "/blog/page:num/"
 
 plugins:
   - jekyll-paginate
+  - jekyll-target-blank

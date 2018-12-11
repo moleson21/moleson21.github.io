@@ -8,8 +8,18 @@ Outside of school & work, I enjoy camping and have achieved the Eagle Scout rank
 
 # Recent Posts
 <div style="width:100%; float:left" markdown="1">
-{% for post in site.posts limit:5 %}
-<div style="font-size:80%; width:20%; word-wrap:break-word; text-align:center; float:left;" markdown="1">
+{% for post in site.posts limit:6 %}
+{% assign loopindex = forloop.index0 | modulo: 3 %}
+{% unless loopindex != 0 or forloop.first%}
+<div style="width:100%; float:left">
+<br />
+</div>
+{% endunless %}
+{% if loopindex == 2 %}
+<div style="font-size:80%; width:32%; word-wrap:break-word; text-align:center; float:left;" markdown="1">
+{% else %}
+<div style="font-size:80%; width:32%; word-wrap:break-word; text-align:center; float:left; padding-right:0.5em;" markdown="1">
+{% endif %}
 <a href="{{ post.url }}">
 <img src="{{ post.main_image }}" alt="{{ post.main_image_alt }}" style="padding-bottom:0.5em;"/>
 <br />
@@ -38,10 +48,10 @@ See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for mo
   This started out as a side project and has slowly grown both in scope and capabilities. It started out as a simple interface for controlling an arduino via serial for rapidily bringing up hardware testing systems with little to no software & hardware modifications for Berkeley Hyperloop. In this use case, we had a varying number solenoids to control as well as some analog temperature sensors to monitor. Since the intial creation, I have added the ability to dynamically set aspects of the program via a config file, added support for TCP & UDP connections, added checksums for command verification, modified the transmission protocol for dynamic length adjustment, and added new interfaces for expanded functionality.
 
 - [Cal AIAA](https://aiaa.berkeley.edu/) <br />
-  This was the primary competition team I was involved with during college and we competed in both the [University Rover Challenge](http://urc.marssociety.org/) hosted by the Mars Society and [Design Build Fly](https://www.aiaadbf.org/) hosted by AIAA competitions. See [this post](2018/12/10/cal-aiaa-club.md) for further information on this team and what we did.
+  This was the primary competition team I was involved with during college and we competed in both the [University Rover Challenge](http://urc.marssociety.org/) hosted by the Mars Society and [Design Build Fly](https://www.aiaadbf.org/) hosted by AIAA competitions. See [this post](_posts/2018-12-10-cal-aiaa-club.md) for further information on this team and what we did.
 
 - [Berkeley Hyperloop](https://berkeleyhyperloop.com/) <br />
-  See [this post](2018/12/10/berkeley-hyperloop-club.md) for further information about this team and what we did. 
+  See [this post](_posts/2018-12-09-berkeley-hyperloop-club.md) for further information about this team and what we did. 
 
 - FPGA RISC-V Softcore <br />
   Developed a three stage CPU for the [RISC-V](https://riscv.org/) instruction set. Included developing software implementations for button debouncing, quadrature encoders, communication to onboard audio/VGA/HDMI output chips, and UART/I2C/SPI protocols.

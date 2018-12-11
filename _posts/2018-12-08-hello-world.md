@@ -2,7 +2,7 @@
 layout: post
 title:  Hello World!
 description: My First Post!
-tags: [test, first, hello world]
+tags: [first, test, hello world]
 main_image: https://assets-cdn.github.com/images/icons/emoji/octocat.png
 main_image_alt: Octocat
 main_image_link: https://pages.github.com/
