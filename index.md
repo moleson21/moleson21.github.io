@@ -7,42 +7,46 @@ Hello! My name is Mitchell and I am a UC Berkeley graduate who majored in Mechan
 Outside of school & work, I enjoy camping and have achieved the Eagle Scout rank in the [Boy Scouts of America](https://www.scouting.org/). Most recently, I traveled for three weeks up the US-101 along the California and Oregon coast then back down through Crater Lake and Lassen National Parks.
 
 # Recent Posts
-<div style="width:100%; padding-bottom:1.0em;" markdown="1">
+<div style="width:100%; float:left" markdown="1">
 {% for post in site.posts limit:5 %}
-{% if forloop.index == 1 %}
-<div style="font-size:80%; text-align:center; float:left;" markdown="1">
-{% else %}
-<div style="font-size:80%; padding-left:1.0em;; text-align:center; float:left;" markdown="1">
-{% endif %}
-<a href="{{ post.url }}" markdown="1">
-<img src="{{ post.main_image }}" width="width" height="height" style="padding-bottom:0.5em;" markdown="1"/>
+<div style="font-size:80%; width:20%; word-wrap:break-word; text-align:center; float:left;" markdown="1">
+<a href="{{ post.url }}">
+<img src="{{ post.main_image }}" alt="{{ post.main_image_alt }}" style="padding-bottom:0.5em;"/>
 <br />
-{{ post.title }}
+{{ post.title | truncate: 75}}
 </a>
 </div>
 {% endfor %}
-<br />
 </div>
-<br />
-<br />
+
+[See all posts](blog/)
 
 # Professional Experience
 See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for more detailed and up to date information. In short, I have previously worked for:
 
-- SpaceX: <br />
+- [SpaceX](https://www.spacex.com/): <br />
   Spent two summers (one as a Launch Intern and another as an Associate Engineer) at the SpaceX Vandenberg launch site. During both of these experiences, I was involved wtih ground side command & control deployment, camera installation/configuration/control, system management, sensor troubleshooting, and camera control software creation.
 
-- Intel: <br />
+- [Intel](https://www.intel.com): <br />
   Spent a summer as a technical intern benchmarking new Optane Memory solutions using SYSMark 2014, PCMark Vantage/8, 3DMark, and IOMeter across numerous system configurations. Additionally, I authored a whitepaper that put forth compelling reasons why current benchmarking needs to be adjusted by analyzing datasets generated across numerous computers and user workloads.
 
 
 # Projects
 
 - [uC Interface](https://moleson21.github.io/uc-interface) <br />
-  This is a side project that has slowly grown in scope and capabilities. It started out as a simple IO GUI for controlling an arduino via serial to rapidily bring up the Berkeley Hyperloop teams hardware testing systems with little to no software & hardware modifications. For this use case, we had a varying number solenoids to control as well as some analog temperature sensors to monitor. Since then, I have added the ability to dynamically set various aspects of the program via a config file, added support for TCP & UDP connections, added checksums for verification, and modified the transmission protocol for minimal tranmission lengths and dynamic length adjustments.
+  This started out as a side project and has slowly grown both in scope and capabilities. It started out as a simple interface for controlling an arduino via serial for rapidily bringing up hardware testing systems with little to no software & hardware modifications for Berkeley Hyperloop. In this use case, we had a varying number solenoids to control as well as some analog temperature sensors to monitor. Since the intial creation, I have added the ability to dynamically set aspects of the program via a config file, added support for TCP & UDP connections, added checksums for command verification, modified the transmission protocol for dynamic length adjustment, and added new interfaces for expanded functionality.
 
 - [Cal AIAA](https://aiaa.berkeley.edu/) <br />
-  This was the primary team I was involved with starting Sophmore year as Software & Computer Systems Lead for the Rover Team. I later went on to become the President of Cal AIAA and Project Manager for the Rover Team. Through my time we spent a great deal of effort building from scratch a modular software system that utilizes a front end control client, middle manager server (to collate and enforce rover commands), and back end rover client that carried out/responded to requests from the server. Furthermore, I also worked closely with the mechanical engineers helping them design their systems with controlability in mind. This included placements of motors, encoders, servos, cameras, strain guages, and power distribution busses. We also attempted to design our own motor controller using [KiCAD](http://kicad-pcb.org/) and [LTSpice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html), however, despite succesfully desgining, milling, assembling, and intial testing of a dual motor controller, it was found to be unfeasable as the required current wat too high for the copper thickness and available cooling. The github group for this team can be found [here](https://github.com/cal-roboops).
+  This was the primary competition team I was involved with during college and we competed in both the [University Rover Challenge](http://urc.marssociety.org/) hosted by the Mars Society and [Design Build Fly](https://www.aiaadbf.org/) hosted by AIAA competitions. I started out Sophmore year as the Software & Computer Systems Lead for the Rover Team and worked my way to President of the club and Project Manager for the Rover Team.
+  
+  - Electrical Design: <br />
+    Performed component selection, analysis, and simulation for all aspects of the rover control systems. Included developing from scratch a dual motor control using [KiCAD](http://kicad-pcb.org/), [LTSpice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html), and an [Othermill Pro](https://www.bantamtools.com/products/bantam-tools-desktop-pcb-milling-machine).
+  - Software: <br />
+    Authored a three program control system that reliably handled multiple user clients/commands and safely managed the rover hardware. The first frontend GUI written in Qt Creator. The command handler and connection manager server. The backend rover client. Developed embedded software to communicate with magnetic absolute encoder ICs, quadrature encoders, high pwoer motor controllers, and servos.
+  - Mechanical Design: <br />
+    Provided guidance and feedback from a control prespective and aided in setting up mount points for electircal systems.
+  
+  Watch our [2018 System Acceptance Review (SAR)](https://www.youtube.com/watch?v=YEJpmT6PJ08). The github group for this team can be found [here](https://github.com/cal-roboops).
 
 - [Berkeley Hyperloop](https://berkeleyhyperloop.com/) <br />
   The github group for this team can be found [here](https://github.com/Berkeley-Hyperloop).
@@ -72,11 +76,9 @@ See my [LinkedIn](https://www.linkedin.com/in/mitchell-oleson-42381a101/) for mo
 - Python Secure File Server <br />
   Created a secure file server for storing, sharing, and protecting files using RSA Encryption, Symmetric Key Block Cipher, and Hash MAC.
 
-- [OwnCloud](https://owncloud.org/) File Server <br />
-  Created and hosted a private OwnCloud instance using an Ubuntu server running in windows hyper-v.
-
 - Misc Smaller Projects
   - Chess: Created a Java chess game with GUI
+  - [OwnCloud](https://owncloud.org/) File Server: Setup and hosted a private OwnCloud file server instance using an Ubuntu server running in Windows Hyper-V.
 
 
 # Contact Info

@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  Template
 tags: [template, tags]
 ---
 
-# Welcome
+# Template Header
 
-**Hello world**, this is my first Jekyll blog post.
-
-I hope you like it!
+Template body

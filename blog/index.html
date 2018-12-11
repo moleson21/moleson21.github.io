@@ -1,0 +1,48 @@
+---
+layout: default
+title: My Blog
+---
+
+<h1 id="posts">
+Posts
+</h1>
+
+<div style="width:100%; float:left" markdown="1">
+{% for post in paginator.posts %}
+{% assign loopindex = forloop.index0 | modulo: 5 %}
+{% unless loopindex != 0 or forloop.first%}
+<div style="width:100%; float:left">
+<br />
+</div>
+{% endunless %}
+<div style="font-size:80%; width:20%; word-wrap:break-word; text-align:center; float:left;" markdown="1">
+<a href="{{ post.url }}">
+<img src="{{ post.main_image }}" alt="{{ post.main_image_alt }}" style="padding-bottom:0.5em;"/>
+<br />
+{{ post.title | truncate: 75}}
+</a>
+</div>
+{% endfor %}
+</div>
+
+<div style="width:100%; float:left">
+<br />
+</div>
+
+<div class="pagination" style="width:100%; text-align:center;">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number" style="padding-left:2em; padding-right:2em;">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

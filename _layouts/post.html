@@ -11,6 +11,18 @@ layout: default
   <p class="view">by <a href="{{ site.url }}">{{ site.author }}</a></p>
 {% endif %}
 
+{% if page.main_image %}
+<div style="width:100%; float:left" markdown="1">
+{% if page.main_image_link %}
+<a href="{{ page.main_image_link }}">
+<img src="{{ page.main_image }}" alt="{{ page.main_image_alt }}" style="padding-bottom:0.5em;"/>
+</a>
+{% else %}
+<img src="{{ page.main_image }}" alt="{{ page.main_image_alt }}" style="padding-bottom:0.5em;"/>
+{% endif %}
+</div>
+{% endif %}
+
 {{content}}
 
 {% if page.tags %}

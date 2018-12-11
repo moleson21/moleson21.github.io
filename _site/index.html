@@ -20,7 +20,7 @@
 {"url":"http://localhost:4000/","headline":"About Me","author":{"@type":"Person","name":"Mitchell Oleson"},"name":"Mitchell Oleson","description":"Welcome to my website!","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/logo.jpg"},"name":"Mitchell Oleson"},"@type":"WebSite","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=372fe451e151e5c6eec3c58a2850d6f9876c32c1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=26125af19b1bd9c9830f7e2d8512e8341ac334ff">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -52,68 +52,38 @@
 <p>Outside of school &amp; work, I enjoy camping and have achieved the Eagle Scout rank in the <a href="https://www.scouting.org/">Boy Scouts of America</a>. Most recently, I traveled for three weeks up the US-101 along the California and Oregon coast then back down through Crater Lake and Lassen National Parks.</p>
 
 <h1 id="recent-posts">Recent Posts</h1>
-<div style="width:100%; padding-bottom:1.0em;">
+<div style="width:100%; float:left">
 
-  <div style="font-size:80%; text-align:center; float:left;">
-
-    <p><a href="/2018/12/10/p4.html">
-<img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" width="width" height="height" style="padding-bottom:0.5em;" />
-<br />
-My Background
-</a></p>
-  </div>
-
-  <div style="font-size:80%; padding-left:1.0em;; text-align:center; float:left;">
-
-    <p><a href="/2018/12/10/p3.html">
-<img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" width="width" height="height" style="padding-bottom:0.5em;" />
-<br />
-My Background
-</a></p>
-  </div>
-
-  <div style="font-size:80%; padding-left:1.0em;; text-align:center; float:left;">
-
-    <p><a href="/2018/12/10/p2.html">
-<img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" width="width" height="height" style="padding-bottom:0.5em;" />
-<br />
-My Background
-</a></p>
-  </div>
-
-  <div style="font-size:80%; padding-left:1.0em;; text-align:center; float:left;">
-
-    <p><a href="/2018/12/10/p1.html">
-<img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" width="width" height="height" style="padding-bottom:0.5em;" />
-<br />
-My Background
-</a></p>
-  </div>
-
-  <div style="font-size:80%; padding-left:1.0em;; text-align:center; float:left;">
-
+  <div style="font-size:80%; width:20%; word-wrap:break-word; text-align:center; float:left;">
     <p><a href="/2018/12/10/my-background.html">
-<img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" width="width" height="height" style="padding-bottom:0.5em;" />
+<img src="/assets/blog_pictures/2018-05-crater-lake-view-1.jpg" alt="Crater Lake View 1" style="padding-bottom:0.5em;" />
 <br />
 My Background
 </a></p>
   </div>
 
-  <p><br /></p>
+  <div style="font-size:80%; width:20%; word-wrap:break-word; text-align:center; float:left;">
+    <p><a href="/2018/12/09/hello-world.html">
+<img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" alt="Octocat" style="padding-bottom:0.5em;" />
+<br />
+Hello World!
+</a></p>
+  </div>
+
 </div>
-<p><br />
-<br /></p>
+
+<p><a href="blog/">See all posts</a></p>
 
 <h1 id="professional-experience">Professional Experience</h1>
 <p>See my <a href="https://www.linkedin.com/in/mitchell-oleson-42381a101/">LinkedIn</a> for more detailed and up to date information. In short, I have previously worked for:</p>
 
 <ul>
   <li>
-    <p>SpaceX: <br />
+    <p><a href="https://www.spacex.com/">SpaceX</a>: <br />
 Spent two summers (one as a Launch Intern and another as an Associate Engineer) at the SpaceX Vandenberg launch site. During both of these experiences, I was involved wtih ground side command &amp; control deployment, camera installation/configuration/control, system management, sensor troubleshooting, and camera control software creation.</p>
   </li>
   <li>
-    <p>Intel: <br />
+    <p><a href="https://www.intel.com">Intel</a>: <br />
 Spent a summer as a technical intern benchmarking new Optane Memory solutions using SYSMark 2014, PCMark Vantage/8, 3DMark, and IOMeter across numerous system configurations. Additionally, I authored a whitepaper that put forth compelling reasons why current benchmarking needs to be adjusted by analyzing datasets generated across numerous computers and user workloads.</p>
   </li>
 </ul>
@@ -123,11 +93,22 @@ Spent a summer as a technical intern benchmarking new Optane Memory solutions us
 <ul>
   <li>
     <p><a href="https://moleson21.github.io/uc-interface">uC Interface</a> <br />
-This is a side project that has slowly grown in scope and capabilities. It started out as a simple IO GUI for controlling an arduino via serial to rapidily bring up the Berkeley Hyperloop teams hardware testing systems with little to no software &amp; hardware modifications. For this use case, we had a varying number solenoids to control as well as some analog temperature sensors to monitor. Since then, I have added the ability to dynamically set various aspects of the program via a config file, added support for TCP &amp; UDP connections, added checksums for verification, and modified the transmission protocol for minimal tranmission lengths and dynamic length adjustments.</p>
+This started out as a side project and has slowly grown both in scope and capabilities. It started out as a simple interface for controlling an arduino via serial for rapidily bringing up hardware testing systems with little to no software &amp; hardware modifications for Berkeley Hyperloop. In this use case, we had a varying number solenoids to control as well as some analog temperature sensors to monitor. Since the intial creation, I have added the ability to dynamically set aspects of the program via a config file, added support for TCP &amp; UDP connections, added checksums for command verification, modified the transmission protocol for dynamic length adjustment, and added new interfaces for expanded functionality.</p>
   </li>
   <li>
     <p><a href="https://aiaa.berkeley.edu/">Cal AIAA</a> <br />
-This was the primary team I was involved with starting Sophmore year as Software &amp; Computer Systems Lead for the Rover Team. I later went on to become the President of Cal AIAA and Project Manager for the Rover Team. Through my time we spent a great deal of effort building from scratch a modular software system that utilizes a front end control client, middle manager server (to collate and enforce rover commands), and back end rover client that carried out/responded to requests from the server. Furthermore, I also worked closely with the mechanical engineers helping them design their systems with controlability in mind. This included placements of motors, encoders, servos, cameras, strain guages, and power distribution busses. We also attempted to design our own motor controller using <a href="http://kicad-pcb.org/">KiCAD</a> and <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html">LTSpice</a>, however, despite succesfully desgining, milling, assembling, and intial testing of a dual motor controller, it was found to be unfeasable as the required current wat too high for the copper thickness and available cooling. The github group for this team can be found <a href="https://github.com/cal-roboops">here</a>.</p>
+This was the primary competition team I was involved with during college and we competed in both the <a href="http://urc.marssociety.org/">University Rover Challenge</a> hosted by the Mars Society and <a href="https://www.aiaadbf.org/">Design Build Fly</a> hosted by AIAA competitions. I started out Sophmore year as the Software &amp; Computer Systems Lead for the Rover Team and worked my way to President of the club and Project Manager for the Rover Team.</p>
+
+    <ul>
+      <li>Electrical Design: <br />
+Performed component selection, analysis, and simulation for all aspects of the rover control systems. Included developing from scratch a dual motor control using <a href="http://kicad-pcb.org/">KiCAD</a>, <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html">LTSpice</a>, and an <a href="https://www.bantamtools.com/products/bantam-tools-desktop-pcb-milling-machine">Othermill Pro</a>.</li>
+      <li>Software: <br />
+Authored a three program control system that reliably handled multiple user clients/commands and safely managed the rover hardware. The first frontend GUI written in Qt Creator. The command handler and connection manager server. The backend rover client. Developed embedded software to communicate with magnetic absolute encoder ICs, quadrature encoders, high pwoer motor controllers, and servos.</li>
+      <li>Mechanical Design: <br />
+Provided guidance and feedback from a control prespective and aided in setting up mount points for electircal systems.</li>
+    </ul>
+
+    <p>Watch our <a href="https://www.youtube.com/watch?v=YEJpmT6PJ08">2018 System Acceptance Review (SAR)</a>. The github group for this team can be found <a href="https://github.com/cal-roboops">here</a>.</p>
   </li>
   <li>
     <p><a href="https://berkeleyhyperloop.com/">Berkeley Hyperloop</a> <br />
@@ -167,13 +148,10 @@ Similar to my <a href="https://moleson21.github.io/uC-Interface">uC Interfacer</
     <p>Python Secure File Server <br />
 Created a secure file server for storing, sharing, and protecting files using RSA Encryption, Symmetric Key Block Cipher, and Hash MAC.</p>
   </li>
-  <li>
-    <p><a href="https://owncloud.org/">OwnCloud</a> File Server <br />
-Created and hosted a private OwnCloud instance using an Ubuntu server running in windows hyper-v.</p>
-  </li>
   <li>Misc Smaller Projects
     <ul>
       <li>Chess: Created a Java chess game with GUI</li>
+      <li><a href="https://owncloud.org/">OwnCloud</a> File Server: Setup and hosted a private OwnCloud file server instance using an Ubuntu server running in Windows Hyper-V.</li>
     </ul>
   </li>
 </ul>
